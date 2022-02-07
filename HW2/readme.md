@@ -1,6 +1,6 @@
 # 3D Models in Web VR: Navigation Meshes
 
-**Present project shows the use of Navigation Meshes in A-Frame**
+**Project shows the use of Navigation Meshes in A-Frame**
 
 
 ### **Description**
@@ -17,6 +17,6 @@ Screenshot showing the visible Navigation Mesh
 ![Navigation Mesh](https://github.com/Mystophicles/ECT4900/raw/main/HW2/HW2.PNG)
 
 ### **Author**
-The author of the project: Ryan Stallworth
+Ryan Stallworth
 
 
