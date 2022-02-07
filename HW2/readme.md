@@ -12,7 +12,7 @@ This is project was created as a part of the course "Introduction to AR/VR Appli
 - HW2.png (screenshot of project)
 
 ### **Project Screenshots**
-Screenshot showing the visible
+Screenshot showing the visible Navigation Mesh
 ![Navigation Mesh](https://github.com/Mystophicles/ECT4900/raw/main/HW2/HW2.PNG)
 
 ### **Author**
