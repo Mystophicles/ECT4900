@@ -9,6 +9,7 @@ This is project was created as a part of the course "Introduction to AR/VR Appli
 - readme.md (markdown file)
 - navmesh.gltf (navigation mesh)
 - scene.gltf (3D Model)
+- mitsubishi_starion_gsr-vr (3D Model Textures)
 - HW2.png (screenshot of project)
 
 ### **Project Screenshots**
