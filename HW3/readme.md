@@ -14,7 +14,7 @@ This project was created as a part of the course "Introduction to AR/VR Applicat
 
 ### **Project Screenshots**
 Screenshot showing the 3D Model in A-Frame
-![3D Model](https://github.com/Mystophicles/ECT4900/raw/main/HW2/HW2.PNG)
+![3D Model](https://github.com/Mystophicles/ECT4900/blob/main/HW3/HW3.PNG)
 
 ### **Author**
 Ryan Stallworth
