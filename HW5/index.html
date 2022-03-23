@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-text value="Neural Style Transfer Gallery" position="-1.5 4 -5" font= "dejavu" color="#000" scale="1.5 1.5 1.5"></a-text>
+      <a-text value="Hover over the Style Cube to view the output." font= "dejavu" position="-1.5 3.5 -5" color="#000"></a-text>
+      
+
+      <a-box position="2 1 -3" rotation="45 45 45" scale="" id="1" src="styleimage.jpg"
+                  event-set__enter="_event: mouseenter; _target: #bg;">
+      </a-box>
+
+      <a-entity laser-controls="hand: left"></a-entity>
+      <a-entity laser-controls="hand: right"></a-entity>
+
+      <a-sky id="bg" src="initialimage1.jpg"></a-sky>
+
+      <a-plane src="Floor.jpg" position="0 0 -3" rotation="-90 0 0" width="10" height="9"></a-plane>
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+  <script>
+    document.querySelector("a-box").addEventListener("mouseenter", function(){
+        if( document.querySelector("a-box").getAttribute("id") == "1"){
+            document.querySelector("a-sky").setAttribute("src", "generatedimage1.png");
+        } else{
+        document.querySelector("a-sky").setAttribute("src", "initialimage1.jpg");
+    }
+    })
+    </script>
+    
+</html>
