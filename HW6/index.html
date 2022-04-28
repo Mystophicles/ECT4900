@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script src='https://aframe.io/releases/1.2.0/aframe.min.js'></script>
+    <script src="https://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
+
+<style>
+    .result{
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+    <a-scene>
+        <a-entity position="0 1.6 -1" htmlembed>
+            <div>
+                <div class="result">Displaying Rhymes for: Plan </div>            
+                <div id="word1"></div>
+                <div id="word2"></div>
+                <div id="word3"></div>
+                <div id="word4"></div>
+                <div id="word5"></div>
+            </div>
+        </a-entity>
+        <a-sky color='#ECECEC'></a-sky>
+    </a-scene>
+</body>
+<script>   
+    var word = document.getElementById("word");
+    var enteredWord = "plan"
+
+    fetch('https://api.datamuse.com/words?rel_rhy=' + enteredWord + '&max=5')
+        .then(response => response.json())
+        .then(function (data) {
+            console.log(data)
+            word1.innerHTML = data[0].word;
+            word2.innerHTML = data[1].word;   
+            word3.innerHTML = data[2].word;   
+            word4.innerHTML = data[3].word;   
+            word5.innerHTML = data[4].word;      
+        })
+</script>
+
+</html>
